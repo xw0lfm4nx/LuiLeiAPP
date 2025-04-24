@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "imagenSrc": "img/1.png",
+    "descripcion": "CHAUFA DE POLLO",
+    "precio": 45.50
+  },
+  {
+    "id": 2,
+    "imagenSrc": "img/2.png",
+    "descripcion": "CHAUFA DE CARNE",
+    "precio": 52.00
+  },
+  {
+    "id": 3,
+    "imagenSrc": "img/3.png",
+    "descripcion": "CHAUFA DE MARISCOS",
+    "precio": 65.75
+  },
+  {
+    "id": 4,
+    "imagenSrc": "img/4.png",
+    "descripcion": "CHAUFA ESPECIAL",
+    "precio": 58.90
+  }
+]

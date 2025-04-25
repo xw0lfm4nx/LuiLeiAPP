@@ -80,7 +80,7 @@ By Luki
                 <table class="table table-hover" id="tbl-ARROZCHAUFA">
                   <thead>
                     <tr>
-                      <th scope="col" colspan="4"><h2 class="text-end">ARROZ CHAUFA</h2></th>
+                      <th scope="col" colspan="4"><h2 class="text-end">ARROZ CHAUFA <a href="#" onclick="ARROZCHAUFA()">R</a></h2></th>
                     </tr>
                   </thead>
                   <tbody>
@@ -125,7 +125,7 @@ By Luki
                 <table class="table table-hover" id="tbl-AEROPUERTO">
                   <thead>
                     <tr>
-                      <th scope="col" colspan="4"><h2 class="text-end">AEROPUERTO</h2></th>
+                      <th scope="col" colspan="4"><h2 class="text-end">AEROPUERTO <a href="#" onclick="AEROPUERTO()">R</a></h2></th>
                     </tr>
                   </thead>
                   <tbody>
@@ -170,7 +170,7 @@ By Luki
                 <table class="table table-hover" id="tbl-TALLARIN">
                   <thead>
                     <tr>
-                      <th scope="col" colspan="4"><h2 class="text-end">TALLARIN SALTEADO</h2></th>
+                      <th scope="col" colspan="4"><h2 class="text-end">TALLARIN SALTEADO <a href="#" onclick="TALLARIN()">R</a></h2></th>
                     </tr>
                   </thead>
                   <tbody>
@@ -215,7 +215,7 @@ By Luki
                 <table class="table table-hover" id="tbl-COMBINADO">
                   <thead>
                     <tr>
-                      <th scope="col" colspan="4"><h2 class="text-end">COMBINADO</h2></th>
+                      <th scope="col" colspan="4"><h2 class="text-end">COMBINADO <a href="#" onclick="COMBINADO()">R</a></h2></th>
                     </tr>
                   </thead>
                   <tbody>
@@ -403,7 +403,7 @@ By Luki
       function CHAUFA(){
         $.getJSON("menu.json", function(data) {
           // Accedemos directamente al array que está dentro del primer elemento del array principal
-          var menuItems = data[0]["ARROZCHAUFA"];
+          var menuItems = data["ARROZCHAUFA"];
           var tablaBody = $("#tbl-ARROZCHAUFA tbody");
           tablaBody.empty();
           $.each(menuItems, function(index, item) {
@@ -428,7 +428,7 @@ By Luki
       function AEROPUERTO(){
         $.getJSON("menu.json", function(data) {
           // Accedemos directamente al array que está dentro del primer elemento del array principal
-          var menuItems = data[0]["AEROPUERTO"];
+          var menuItems = data["AEROPUERTO"];
           var tablaBody = $("#tbl-AEROPUERTO tbody");
           tablaBody.empty();
           $.each(menuItems, function(index, item) {
@@ -453,7 +453,7 @@ By Luki
       function TALLARIN(){
         $.getJSON("menu.json", function(data) {
           // Accedemos directamente al array que está dentro del primer elemento del array principal
-          var menuItems = data[0]["TALLARIN"];
+          var menuItems = data["TALLARIN"];
           var tablaBody = $("#tbl-TALLARIN tbody");
           tablaBody.empty();
           $.each(menuItems, function(index, item) {
@@ -478,7 +478,7 @@ By Luki
       function COMBINADO(){
         $.getJSON("menu.json", function(data) {
           // Accedemos directamente al array que está dentro del primer elemento del array principal
-          var menuItems = data[0]["COMBINADO"];
+          var menuItems = data["COMBINADO"];
           var tablaBody = $("#tbl-COMBINADO tbody");
           tablaBody.empty();
           $.each(menuItems, function(index, item) {

@@ -47,7 +47,7 @@ By Luki
     </style>
     <title>LuiLei</title>
   </head>
-  <body>
+  <body class="text-bg-light">
     <nav class="navbar bg-body-tertiary fixed-top mb-5">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
@@ -56,45 +56,45 @@ By Luki
           </a>
         </div>
     </nav>
-    <div class="container text-center pt-10">
-        <ul class="nav nav-tabs">
-            <li class="nav-item dt">
-              <a class="nav-link active text-danger" aria-current="page" data-bs-toggle="tab" href="#MENU">
-                <img src="img/cll_menu.png" width="32px" height="32px" alt=""><br>
-                Menu
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-danger" data-bs-toggle="tab" href="#PLATOCARTA">
-                <img src="img/carta.png" width="32px" height="32px" alt=""><br>
-                Plato a la Carta
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-danger" data-bs-toggle="tab" href="#BOCADITOSCHINOS">
-                <img src="img/bocaditos.png" width="32px" height="32px" alt=""><br>
-                Bocaditos Chinos
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-danger" data-bs-toggle="tab" href="#PROMOCIONES">
-                <img src="img/promociones.png" width="32px" height="32px" alt=""><br>
-                Promociones
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-danger" data-bs-toggle="tab" href="#COMBOSFAMILIARES">
-                <img src="img/combofamiliares.png" width="32px" height="32px" alt=""><br>
-                Combos Familiares
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-danger" data-bs-toggle="tab" href="#BEBIDAS">
-                <img src="img/bebidas.png" width="32px" height="32px" alt=""><br>
-                Bebidas
-              </a>
-            </li>
-        </ul>
+    <ul class="nav nav-tabs text-center pt-10">
+        <li class="nav-item dt">
+          <a class="nav-link active text-danger" aria-current="page" data-bs-toggle="tab" href="#MENU">
+            <img src="img/cll_menu.png" width="32px" height="32px" alt=""><br>
+            Menu
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-danger" data-bs-toggle="tab" href="#PLATOCARTA">
+            <img src="img/carta.png" width="32px" height="32px" alt=""><br>
+            Plato a la Carta
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-danger" data-bs-toggle="tab" href="#BOCADITOSCHINOS">
+            <img src="img/bocaditos.png" width="32px" height="32px" alt=""><br>
+            Bocaditos Chinos
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-danger" data-bs-toggle="tab" href="#PROMOCIONES">
+            <img src="img/promociones.png" width="32px" height="32px" alt=""><br>
+            Promociones
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-danger" data-bs-toggle="tab" href="#COMBOSFAMILIARES">
+            <img src="img/combofamiliares.png" width="32px" height="32px" alt=""><br>
+            Combos Familiares
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-danger" data-bs-toggle="tab" href="#BEBIDAS">
+            <img src="img/bebidas.png" width="32px" height="32px" alt=""><br>
+            Bebidas
+          </a>
+        </li>
+    </ul>
+    <div class="container text-center">
           
         <div class="tab-content pt-5">
             <div class="tab-pane fade show active" id="MENU">
@@ -411,7 +411,7 @@ By Luki
               "src": item.imagenSrc,
               "width": "40px",
               "height": "40px",
-              "class": "rounded",
+              "class": "rounded cllimg",
               "alt": item.descripcion // Puedes usar la descripción como texto alternativo
             })));
             fila.append($("<td class='cll-dcol'>").text(item.descripcion));
@@ -432,9 +432,9 @@ By Luki
             fila.append($("<th class='cll-ncol' scope='row'>").text(item.id));
             fila.append($("<td class='cll-icol'>").append($("<img>").attr({
               "src": item.imagenSrc,
-              "width": "30px",
-              "height": "30px",
-              "class": "rounded",
+              "width": "40px",
+              "height": "40px",
+              "class": "rounded cllimg",
               "alt": item.descripcion
             })));
             fila.append($("<td class='cll-dcol'>").text(item.descripcion));
@@ -457,9 +457,9 @@ By Luki
             fila.append($("<th class='cll-ncol' scope='row'>").text(item.id));
             fila.append($("<td class='cll-icol'>").append($("<img>").attr({
               "src": item.imagenSrc,
-              "width": "30px",
-              "height": "30px",
-              "class": "rounded",
+              "width": "40px",
+              "height": "40px",
+              "class": "rounded cllimg",
               "alt": item.descripcion
             })));
             fila.append($("<td class='cll-dcol'>").text(item.descripcion));
@@ -482,9 +482,9 @@ By Luki
             fila.append($("<th class='cll-ncol' scope='row'>").text(item.id));
             fila.append($("<td class='cll-icol'>").append($("<img>").attr({
               "src": item.imagenSrc,
-              "width": "30px",
-              "height": "30px",
-              "class": "rounded",
+              "width": "40px",
+              "height": "40px",
+              "class": "rounded cllimg",
               "alt": item.descripcion
             })));
             fila.append($("<td class='cll-dcol'>").text(item.descripcion));
@@ -507,9 +507,9 @@ By Luki
             fila.append($("<th class='cll-ncol' scope='row'>").text(item.id));
             fila.append($("<td class='cll-icol'>").append($("<img>").attr({
               "src": item.imagenSrc,
-              "width": "30px",
-              "height": "30px",
-              "class": "rounded",
+              "width": "40px",
+              "height": "40px",
+              "class": "rounded cllimg",
               "alt": item.descripcion
             })));
             fila.append($("<td class='cll-dcol'>").text(item.descripcion));

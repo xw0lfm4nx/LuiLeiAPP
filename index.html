@@ -522,10 +522,15 @@ By Luki
         });
       }
       $(document).ready(function() {
+        CHAUFA();
+        AEROPUERTO();
+        TALLARIN();
+        COMBINADO();
         // Escucha el evento click en cualquier elemento con la clase 'cllimg'
         $(document).on('click', '.cllimg', function() {
           // Obtiene el 'src' del elemento clickeado
           var imgSrc = $(this).attr('src');
+          var imgAlt = $(this).attr('alt');
 
           // Imprime el 'src' en la consola (para tu verificación)
           console.log("Imagen clickeada:", imgSrc);
@@ -536,6 +541,9 @@ By Luki
 
           // Establece el 'src' de la imagen dentro del modal
           modalImagen.attr('src', imgSrc);
+          modalImagen.attr('alt', imgAlt);
+          console.log("Imagen:", imgAlt);
+          $('#imagenModalLabel').html(imgAlt);
 
           // Muestra el modal
           imagenModal.show();
@@ -549,7 +557,7 @@ By Luki
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            <img src="" class="img-fluid" id="modalImagen" alt="Imagen Ampliada">
+            <img src="" class="img-fluid " id="modalImagen" alt="Imagen Ampliada">
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>

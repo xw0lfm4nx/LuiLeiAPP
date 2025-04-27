@@ -66,13 +66,13 @@ By Luki
         <li class="nav-item">
           <a class="nav-link text-danger" data-bs-toggle="tab" href="#PLATOCARTA">
             <img src="img/carta.png" width="32px" height="32px" alt=""><br>
-            Plato a<br />la Carta
+            Plato a la Carta
           </a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-danger" data-bs-toggle="tab" href="#BOCADITOSCHINOS">
             <img src="img/bocaditos.png" width="32px" height="32px" alt=""><br>
-            Bocaditos<br />Chinos
+            Bocaditos Chinos
           </a>
         </li>
         <li class="nav-item">
@@ -84,7 +84,7 @@ By Luki
         <li class="nav-item">
           <a class="nav-link text-danger" data-bs-toggle="tab" href="#COMBOSFAMILIARES">
             <img src="img/combofamiliares.png" width="32px" height="32px" alt=""><br>
-            Combos<br />Familiares
+            Combos Familiares
           </a>
         </li>
         <li class="nav-item">
@@ -107,37 +107,37 @@ By Luki
                   <tbody>
                     <tr>
                       <th class="cll-ncol" scope="row">1</th>
-                      <td class="cll-icol"><img src="img/1.png" width="40px" height="40px" class="rounded" alt="..."></td>
+                      <td class="cll-icol"><img src="img/1.png" width="40px" height="40px" class="rounded cllimg" alt="..."></td>
                       <td class="cll-dcol">CHAUFA DE</td>
                       <td class="cll-pcol"><span class="badge text-bg-danger">58.00</span></td>
                     </tr>
                     <tr>
                       <th class="cll-ncol" scope="row">2</th>
-                      <td class="cll-icol"><img src="img/1.png" width="40px" height="40px" class="rounded" alt="..."></td>
+                      <td class="cll-icol"><img src="img/1.png" width="40px" height="40px" class="rounded cllimg" alt="..."></td>
                       <td class="cll-dcol">CHAUFA DE</td>
                       <td class="cll-pcol"><span class="badge text-bg-danger">58.00</span></td>
                     </tr>
                     <tr>
                       <th class="cll-ncol" scope="row">3</th>
-                      <td class="cll-icol"><img src="img/1.png" width="40px" height="40px" class="rounded" alt="..."></td>
+                      <td class="cll-icol"><img src="img/1.png" width="40px" height="40px" class="rounded cllimg" alt="..."></td>
                       <td class="cll-dcol">CHAUFA DE</td>
                       <td class="cll-pcol"><span class="badge text-bg-danger">58.00</span></td>
                     </tr>
                     <tr>
                       <th class="cll-ncol" scope="row">4</th>
-                      <td class="cll-icol"><img src="img/1.png" width="40px" height="40px" class="rounded" alt="..."></td>
+                      <td class="cll-icol"><img src="img/1.png" width="40px" height="40px" class="rounded cllimg" alt="..."></td>
                       <td class="cll-dcol">CHAUFA DE</td>
                       <td class="cll-pcol"><span class="badge text-bg-danger">58.00</span></td>
                     </tr>
                     <tr>
                       <th class="cll-ncol" scope="row">5</th>
-                      <td class="cll-icol"><img src="img/1.png" width="40px" height="40px" class="rounded" alt="..."></td>
+                      <td class="cll-icol"><img src="img/1.png" width="40px" height="40px" class="rounded cllimg" alt="..."></td>
                       <td class="cll-dcol">CHAUFA DE</td>
                       <td class="cll-pcol"><span class="badge text-bg-danger">58.00</span></td>
                     </tr>
                     <tr>
                       <th class="cll-ncol" scope="row">6</th>
-                      <td class="cll-icol"><img src="img/1.png" width="40px" height="40px" class="rounded" alt="..."></td>
+                      <td class="cll-icol"><img src="img/1.png" width="40px" height="40px" class="rounded cllimg" alt="..."></td>
                       <td class="cll-dcol">CHAUFA DE</td>
                       <td class="cll-pcol"><span class="badge text-bg-danger">58.00</span></td>
                     </tr>
@@ -521,8 +521,42 @@ By Luki
           console.error("Error al cargar el JSON: " + err);
         });
       }
-    </script>
+      $(document).ready(function() {
+        // Escucha el evento click en cualquier elemento con la clase 'cllimg'
+        $(document).on('click', '.cllimg', function() {
+          // Obtiene el 'src' del elemento clickeado
+          var imgSrc = $(this).attr('src');
 
+          // Imprime el 'src' en la consola (para tu verificación)
+          console.log("Imagen clickeada:", imgSrc);
+
+          // Obtiene la instancia del modal de Bootstrap
+          var modalImagen = $('#modalImagen');
+          var imagenModal = new bootstrap.Modal($('#imagenModal'));
+
+          // Establece el 'src' de la imagen dentro del modal
+          modalImagen.attr('src', imgSrc);
+
+          // Muestra el modal
+          imagenModal.show();
+        });
+      });
+    </script>
+    <div class="modal fade" id="imagenModal" tabindex="-1" aria-labelledby="imagenModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg"> <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="imagenModalLabel">Imagen Seleccionada</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="" class="img-fluid" id="modalImagen" alt="Imagen Ampliada">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
 <!-- 

@@ -54,6 +54,9 @@ By Luki
             <img src="img/logo.jpg" alt="Logo" width="25" height="25" class="d-inline-block align-text-top">
                 Chifa Lui Lei App
           </a>
+          <div class="float-start">
+            <button class="btn btn-warning d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive">Mi Orden</button>
+          </div>
         </div>
     </nav>
     <ul class="nav nav-tabs text-center pt-10">
@@ -101,7 +104,7 @@ By Luki
                 <table class="table table-hover" id="tbl-ARROZCHAUFA">
                   <thead>
                     <tr>
-                      <th scope="col" colspan="4"><h2 class="text-end">ARROZ CHAUFA <a href="#" onclick="CHAUFA();">R</a></h2></th>
+                      <th scope="col" colspan="4"><h2 class="text-end">ARROZ CHAUFA</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -146,7 +149,7 @@ By Luki
                 <table class="table table-hover" id="tbl-AEROPUERTO">
                   <thead>
                     <tr>
-                      <th scope="col" colspan="4"><h2 class="text-end">AEROPUERTO <a href="#" onclick="AEROPUERTO();">R</a></h2></th>
+                      <th scope="col" colspan="4"><h2 class="text-end">AEROPUERTO</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -191,7 +194,7 @@ By Luki
                 <table class="table table-hover" id="tbl-TALLARIN">
                   <thead>
                     <tr>
-                      <th scope="col" colspan="4"><h2 class="text-end">TALLARIN SALTEADO <a href="#" onclick="TALLARIN();">R</a></h2></th>
+                      <th scope="col" colspan="4"><h2 class="text-end">TALLARIN SALTEADO</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -236,7 +239,7 @@ By Luki
                 <table class="table table-hover" id="tbl-COMBINADO">
                   <thead>
                     <tr>
-                      <th scope="col" colspan="4"><h2 class="text-end">COMBINADO <a href="#" onclick="COMBINADO();">R</a></h2></th>
+                      <th scope="col" colspan="4"><h2 class="text-end">COMBINADO</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -550,19 +553,35 @@ By Luki
         });
       });
     </script>
-    <div class="modal fade" id="imagenModal" tabindex="-1" aria-labelledby="imagenModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg"> <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="imagenModalLabel">Imagen Seleccionada</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div class="modal bg-dark fade" id="imagenModal" tabindex="-1" aria-labelledby="imagenModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered"> 
+        <div class="modal-content text-bg-dark">
+          <div class="modal-footer">
+            <button type="button" class="btn btn-warning" data-bs-dismiss="modal">X</button>
           </div>
+          <!-- <div class="modal-header">yy
+            <div class="float-start">
+              <a href="#"  >luki</a>
+            </div>
+            <button type="button" class="btn float-start btn-danger" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div> -->
           <div class="modal-body">
             <img src="" class="img-fluid " id="modalImagen" alt="Imagen Ampliada" width="500px" height="500px">
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <h5 class="modal-title" id="imagenModalLabel">Imagen Seleccionada</h5>
           </div>
         </div>
+      </div>
+    </div>
+
+    <div class="offcanvas-lg offcanvas-end text-bg-warning" tabindex="-1" id="offcanvasResponsive" aria-labelledby="offcanvasResponsiveLabel">
+      <div class="modal-footer">
+        <button type="button" class="btn btn-warning" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasResponsive" aria-label="Close">X</button>
+      </div>
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasResponsiveLabel">Detalle de tu Orden:</h5>
+      </div>
+      <div class="offcanvas-body">
+        <p class="mb-0">This is content within an <code>.offcanvas-lg</code>.</p>
       </div>
     </div>
   </body>

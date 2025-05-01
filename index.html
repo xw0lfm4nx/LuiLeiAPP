@@ -48,6 +48,50 @@ By Luki
     <title>LuiLei</title>
   </head>
   <body class="text-bg-light">
+    <div class="modal bg-dark fade" id="imagenModal" tabindex="-1" aria-labelledby="imagenModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered"> 
+        <div class="modal-content text-bg-dark">
+          <div class="modal-footer">
+            <button type="button" class="btn btn-warning" data-bs-dismiss="modal">X</button>
+          </div>
+          <!-- <div class="modal-header">yy
+            <div class="float-start">
+              <a href="#"  >luki</a>
+            </div>
+            <button type="button" class="btn float-start btn-danger" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div> -->
+          <div class="modal-body">
+            <img src="" class="img-fluid " id="modalImagen" alt="Imagen Ampliada" width="500px" height="500px">
+            <h5 class="modal-title" id="imagenModalLabel">Imagen Seleccionada</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="offcanvas offcanvas-end text-bg-warning" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="modal-footer">
+        <button type="button" class="btn btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Detalle de tu Orden</h5>
+        <!-- <button type="button" class="btn-close float-start" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
+      </div>
+      <div class="offcanvas-body">
+        <div>
+          Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+        </div>
+        <div class="dropdown mt-3">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+            Dropdown button
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
     <nav class="navbar bg-body-tertiary fixed-top mb-5">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
@@ -55,7 +99,7 @@ By Luki
                 Chifa Lui Lei App
           </a>
           <div class="float-start">
-            <button class="btn btn-warning d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive">Mi Orden</button>
+            <button class="btn btn-warning" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" href="#offcanvasExample" aria-controls="offcanvasExample">Mi Orden</button>
           </div>
         </div>
     </nav>
@@ -553,37 +597,6 @@ By Luki
         });
       });
     </script>
-    <div class="modal bg-dark fade" id="imagenModal" tabindex="-1" aria-labelledby="imagenModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg modal-dialog-centered"> 
-        <div class="modal-content text-bg-dark">
-          <div class="modal-footer">
-            <button type="button" class="btn btn-warning" data-bs-dismiss="modal">X</button>
-          </div>
-          <!-- <div class="modal-header">yy
-            <div class="float-start">
-              <a href="#"  >luki</a>
-            </div>
-            <button type="button" class="btn float-start btn-danger" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div> -->
-          <div class="modal-body">
-            <img src="" class="img-fluid " id="modalImagen" alt="Imagen Ampliada" width="500px" height="500px">
-            <h5 class="modal-title" id="imagenModalLabel">Imagen Seleccionada</h5>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="offcanvas-lg offcanvas-end text-bg-warning" tabindex="-1" id="offcanvasResponsive" aria-labelledby="offcanvasResponsiveLabel">
-      <div class="modal-footer">
-        <button type="button" class="btn btn-warning" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasResponsive" aria-label="Close">X</button>
-      </div>
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasResponsiveLabel">Detalle de tu Orden:</h5>
-      </div>
-      <div class="offcanvas-body">
-        <p class="mb-0">This is content within an <code>.offcanvas-lg</code>.</p>
-      </div>
-    </div>
   </body>
 </html>
 <!-- 

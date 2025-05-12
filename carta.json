@@ -3,67 +3,67 @@
     {
       "id": 400,
       "imagenSrc": "img/400.png",
-      "descripcion": "SOPA WANTAN DE POLLO FAMILIAR",
+      "descripcion": "SOPA WANTAN DE POLLO",
       "precio": 16.00
     },
     {
       "id": 401,
       "imagenSrc": "img/401.png",
-      "descripcion": "SOPA WANTAN ESPECIAL FAMILIAR",
+      "descripcion": "SOPA WANTAN ESPECIAL",
       "precio": 16.00
     },
     {
       "id": 402,
       "imagenSrc": "img/402.png",
-      "descripcion": "SOPA LUILEI DE POLLO FAMILIAR",
+      "descripcion": "SOPA LUILEI DE POLLO",
       "precio": 19.00
     },
     {
       "id": 403,
       "imagenSrc": "img/403.png",
-      "descripcion": "SOPA LUI LEI ESPECIAL FAMILIAR",
+      "descripcion": "SOPA LUI LEI ESPECIAL",
       "precio": 19.00
     },
     {
       "id": 404,
       "imagenSrc": "img/404.png",
-      "descripcion": "SOPA FUCHIFU FAMILIAR",
+      "descripcion": "SOPA FUCHIFU",
       "precio": 19.00
     },
     {
       "id": 405,
       "imagenSrc": "img/405.png",
-      "descripcion": "SOPA PAC PO FAMILIAR",
+      "descripcion": "SOPA PAC PO",
       "precio": 23.00
     },
     {
       "id": 406,
       "imagenSrc": "img/406.png",
-      "descripcion": "SOPA SIU KAO FAMILIAR",
+      "descripcion": "SOPA SIU KAO",
       "precio": 23.00
     },
     {
       "id": 407,
       "imagenSrc": "img/407.png",
-      "descripcion": "SOPA DE POLLO CON KIÓN FAMILIAR",
+      "descripcion": "SOPA DE POLLO CON KIÓN",
       "precio": 23.00
     },
     {
       "id": 408,
       "imagenSrc": "img/408.png",
-      "descripcion": "SOPA DE FIDEO CHINO CON POLLO FAMILIAR",
+      "descripcion": "SOPA DE FIDEO CHINO CON POLLO",
       "precio": 23.00
     },
     {
       "id": 409,
       "imagenSrc": "img/409.png",
-      "descripcion": "SOPA DE FIDEO CHINO ESPECIAL FAMILIAR",
+      "descripcion": "SOPA DE FIDEO CHINO ESPECIAL",
       "precio": 23.00
     },
     {
       "id": 410,
       "imagenSrc": "img/410.png",
-      "descripcion": "SOPA ESPECIAL PICANTE FAMILIAR",
+      "descripcion": "SOPA ESPECIAL PICANTE",
       "precio": 23.00
     }
   ],
@@ -71,67 +71,67 @@
     {
       "id": "400F",
       "imagenSrc": "img/400.png",
-      "descripcion": "SOPA WANTAN DE POLLO",
+      "descripcion": "SOPA WANTAN DE POLLO FAMILIAR",
       "precio": 58.00
     },
     {
       "id": "401F",
       "imagenSrc": "img/401.png",
-      "descripcion": "SOPA WANTAN ESPECIAL",
+      "descripcion": "SOPA WANTAN ESPECIAL FAMILIAR",
       "precio": 58.00
     },
     {
       "id": "402F",
       "imagenSrc": "img/402.png",
-      "descripcion": "SOPA LUILEI DE POLLO",
+      "descripcion": "SOPA LUILEI DE POLLO FAMILIAR",
       "precio": 58.00
     },
     {
       "id": "403F",
       "imagenSrc": "img/403.png",
-      "descripcion": "SOPA LUI LEI ESPECIAL",
+      "descripcion": "SOPA LUI LEI ESPECIAL FAMILIAR",
       "precio": 58.00
     },
     {
       "id": "404F",
       "imagenSrc": "img/404.png",
-      "descripcion": "SOPA FUCHIFU",
+      "descripcion": "SOPA FUCHIFU FAMILIAR",
       "precio": 58.00
     },
     {
       "id": "405F",
       "imagenSrc": "img/405.png",
-      "descripcion": "SOPA PAC PO",
+      "descripcion": "SOPA PAC PO FAMILIAR",
       "precio": 58.00
     },
     {
       "id": "406F",
       "imagenSrc": "img/406.png",
-      "descripcion": "SOPA SIU KAO",
+      "descripcion": "SOPA SIU KAO FAMILIAR",
       "precio": 58.00
     },
     {
       "id": "407F",
       "imagenSrc": "img/407.png",
-      "descripcion": "SOPA DE POLLO CON KIÓN",
+      "descripcion": "SOPA DE POLLO CON KIÓN FAMILIAR",
       "precio": 58.00
     },
     {
       "id": "408F",
       "imagenSrc": "img/408.png",
-      "descripcion": "SOPA DE FIDEO CHINO CON POLLO",
+      "descripcion": "SOPA DE FIDEO CHINO CON POLLO FAMILIAR",
       "precio": 58.00
     },
     {
       "id": "409F",
       "imagenSrc": "img/409.png",
-      "descripcion": "SOPA DE FIDEO CHINO ESPECIAL",
+      "descripcion": "SOPA DE FIDEO CHINO ESPECIAL FAMILIAR",
       "precio": 58.00
     },
     {
       "id": "410F",
       "imagenSrc": "img/410.png",
-      "descripcion": "SOPA ESPECIAL PICANTE",
+      "descripcion": "SOPA ESPECIAL PICANTE FAMILIAR",
       "precio": 58.00
     }
   ],

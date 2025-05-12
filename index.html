@@ -60,7 +60,7 @@ By Luki
             </div>
             <button type="button" class="btn float-start btn-danger" data-bs-dismiss="modal" aria-label="Close"></button>
           </div> -->
-          <div class="modal-body">
+          <div class="modal-body text-center">
             <img src="" class="img-fluid " id="modalImagen" alt="Imagen Ampliada" width="500px" height="500px">
             <h5 class="modal-title" id="imagenModalLabel">Imagen Seleccionada</h5>
           </div>
@@ -103,7 +103,7 @@ By Luki
           </div>
         </div>
     </nav>
-    <div style="overflow-x: scroll;" width="100%">
+    <div style="overflow-x: scroll;" class="text-center" width="100%">
       <ul class="nav nav-tabs text-center pt-10" style="min-width: 800px;">
           <li class="nav-item dt">
             <a class="nav-link active text-danger" aria-current="page" data-bs-toggle="tab" href="#MENU">
@@ -461,6 +461,7 @@ By Luki
               "width": "40px",
               "height": "40px",
               "class": "rounded cllimg",
+              "onerror":"this.src='img/no-photo.png';",
               "alt": item.descripcion // Puedes usar la descripción como texto alternativo
             })));
             fila.append($("<td class='cll-dcol'>").text(item.descripcion));
@@ -484,6 +485,7 @@ By Luki
               "width": "40px",
               "height": "40px",
               "class": "rounded cllimg",
+              "onerror":"this.src='img/no-photo.png';",
               "alt": item.descripcion
             })));
             fila.append($("<td class='cll-dcol'>").text(item.descripcion));
@@ -509,6 +511,7 @@ By Luki
               "width": "40px",
               "height": "40px",
               "class": "rounded cllimg",
+              "onerror":"this.src='img/no-photo.png';",
               "alt": item.descripcion
             })));
             fila.append($("<td class='cll-dcol'>").text(item.descripcion));
@@ -534,6 +537,7 @@ By Luki
               "width": "40px",
               "height": "40px",
               "class": "rounded cllimg",
+              "onerror":"this.src='img/no-photo.png';",
               "alt": item.descripcion
             })));
             fila.append($("<td class='cll-dcol'>").text(item.descripcion));
@@ -559,6 +563,7 @@ By Luki
               "width": "40px",
               "height": "40px",
               "class": "rounded cllimg",
+              "onerror":"this.src='img/no-photo.png';",
               "alt": item.descripcion
             })));
             fila.append($("<td class='cll-dcol'>").text(item.descripcion));
@@ -587,6 +592,7 @@ By Luki
               "width": "40px",
               "height": "40px",
               "class": "rounded cllimg",
+              "onerror":"this.src='img/no-photo.png';",
               "alt": item.descripcion
             })));
             fila.append($("<td class='cll-dcol'>").text(item.descripcion));

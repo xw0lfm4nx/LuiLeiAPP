@@ -589,7 +589,7 @@ By Luki
             })));
             fila.append($("<td class='cll-dcol'>").text(item.descripcion));
             fila.append($("<td class='cll-pcol'>").append($("<span class='badge text-bg-warning'>").text(item.precio.toFixed(2))));
-            fila.append($("<td class='cll-pcol'>").append($("<span class='badge text-bg-warning'>").text(pltFamItems(i).precio.toFixed(2))));
+            fila.append($("<td class='cll-pcol'>").append($("<span class='badge text-bg-warning'>").text(pltFamItems[i].precio.toFixed(2))));
             tablaBody.append(fila);
             i++;
           });

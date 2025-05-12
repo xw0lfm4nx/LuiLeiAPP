@@ -327,7 +327,7 @@ By Luki
                 </table>
             </div>
             <div class="tab-pane fade" id="PLATOCARTA">
-              <table class="table table-hover">
+              <table class="table table-hover" id="tbl-SOPADELACASA">
                 <thead>
                   <tr>
                     <th scope="col" colspan="3"><h2 class="text-end">SOPA DE LA CASA</h2></th>
@@ -344,11 +344,11 @@ By Luki
                     <td><span class="badge text-bg-warning">58.00</span></td>
                   </tr>
                   <tr>
-                    <th scope="row">400</th>
-                    <td><img src="img/1.png" width="30px" height="30px" class="rounded" alt="..."></td>
-                    <td>SOPA WANTAN DE POLLO</td>
-                    <td><span class="badge text-bg-warning">20.00</span></td>
-                    <td><span class="badge text-bg-warning">58.00</span></td>
+                    <th class="cll-ncol" scope="row">401</th>
+                    <td class="cll-icol"><img src="img/1.png" width="30px" height="30px" class="rounded" alt="..."></td>
+                    <td class="cll-dcol">COMBINADO DE</td>
+                    <td class="cll-pcol"><span class="badge text-bg-warning">20.00</span></td>
+                    <td class="cll-pcol"><span class="badge text-bg-warning">58.00</span></td>
                   </tr>
                   <tr>
                     <th scope="row">400</th>
@@ -568,11 +568,42 @@ By Luki
           console.error("Error al cargar el JSON: " + err);
         });
       }
+      
+      function SOPADELACASA(){
+        $.getJSON("carta.json", function(data) {
+          // Accedemos directamente al array que está dentro del primer elemento del array principal
+          var menuItems = data["SOPADELACASA"];
+          var pltFamItems = data["SOPADELACASA_FAMILIAR"];
+          var tablaBody = $("#tbl-SOPADELACASA tbody");
+          var i=0;
+          tablaBody.empty();
+          $.each(menuItems, function(index, item) {
+            var fila = $("<tr>");
+            fila.append($("<th class='cll-ncol' scope='row'>").text(item.id));
+            fila.append($("<td class='cll-icol'>").append($("<img>").attr({
+              "src": item.imagenSrc,
+              "width": "40px",
+              "height": "40px",
+              "class": "rounded cllimg",
+              "alt": item.descripcion
+            })));
+            fila.append($("<td class='cll-dcol'>").text(item.descripcion));
+            fila.append($("<td class='cll-pcol'>").append($("<span class='badge text-bg-warning'>").text(item.precio.toFixed(2))));
+            fila.append($("<td class='cll-pcol'>").append($("<span class='badge text-bg-warning'>").text(pltFamItems(i).precio.toFixed(2))));
+            tablaBody.append(fila);
+            i++;
+          });
+        }).fail(function(jqxhr, textStatus, error) {
+          var err = textStatus + ", " + error;
+          console.error("Error al cargar el JSON: " + err);
+        });
+      }
       $(document).ready(function() {
         CHAUFA();
         AEROPUERTO();
         TALLARIN();
         COMBINADO();
+        SOPADELACASA();
         // Escucha el evento click en cualquier elemento con la clase 'cllimg'
         $(document).on('click', '.cllimg', function() {
           // Obtiene el 'src' del elemento clickeado

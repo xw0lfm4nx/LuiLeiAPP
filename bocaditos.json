@@ -1,0 +1,90 @@
+{
+  "BOCADITOS": [
+    {
+      "id": 200,
+      "imagenSrc": "img/200.png",
+      "descripcion": "SIU MAI AL VAPOR (6UND)",
+      "precio": 18.00
+    },
+    {
+      "id": 201,
+      "imagenSrc": "img/201.png",
+      "descripcion": "SIU MAI FRITO (6UND)",
+      "precio": 18.00
+    },
+    {
+      "id": 202,
+      "imagenSrc": "img/202.png",
+      "descripcion": "SIU KAO AL VAPOR (6UND)",
+      "precio": 16.00
+    },
+    {
+      "id": 203,
+      "imagenSrc": "img/203.png",
+      "descripcion": "SIU KAO FRITO (6UND)",
+      "precio": 12.00
+    },
+    {
+      "id": 204,
+      "imagenSrc": "img/204.png",
+      "descripcion": "ENROLLADO PRIMAVERA (6UND)",
+      "precio": 18.00
+    },
+    {
+      "id": 205,
+      "imagenSrc": "img/205.png",
+      "descripcion": "WANTANES SIMPLES (6UND)",
+      "precio": 10.00
+    },
+    {
+      "id": 206,
+      "imagenSrc": "img/206.png",
+      "descripcion": "WANTANES ESPECIALES (6UND)",
+      "precio": 12.00
+    }
+  ],
+  "BOCADITOS_DOCENA": [
+    {
+      "id": "200B",
+      "imagenSrc": "img/200.png",
+      "descripcion": "SIU MAI AL VAPOR (12UND)",
+      "precio": 36.00
+    },
+    {
+      "id": "201B",
+      "imagenSrc": "img/201.png",
+      "descripcion": "SIU MAI FRITO (12UND)",
+      "precio": 36.00
+    },
+    {
+      "id": "202B",
+      "imagenSrc": "img/202.png",
+      "descripcion": "SIU KAO AL VAPOR (12UND)",
+      "precio": 32.00
+    },
+    {
+      "id": "203B",
+      "imagenSrc": "img/203.png",
+      "descripcion": "SIU KAO FRITO (12UND)",
+      "precio": 24.00
+    },
+    {
+      "id": "204B",
+      "imagenSrc": "img/204.png",
+      "descripcion": "ENROLLADO PRIMAVERA (12UND)",
+      "precio": 36.00
+    },
+    {
+      "id": "205B",
+      "imagenSrc": "img/205.png",
+      "descripcion": "WANTANES SIMPLES (12UND)",
+      "precio": 20.00
+    },
+    {
+      "id": "206B",
+      "imagenSrc": "img/206.png",
+      "descripcion": "WANTANES ESPECIALES (12UND)",
+      "precio": 24.00
+    }
+  ]
+}

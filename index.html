@@ -384,11 +384,12 @@ By Luki
               </table>
             </div>
             <div class="tab-pane fade" id="BOCADITOSCHINOS">
-              <table class="table table-hover">
+              <table class="table table-hover" id="tbl-BOCADITOS">
                 <thead>
                   <tr>
-                    <th scope="col" colspan="3"><h2 class="text-end">BOCADITOS CHINOS</h2></th>
-                    <th>S/</th>
+                    <th scope="col" colspan="3"><h2 class="text-end">BOCADITOS</h2></th>
+                    <th>(6und)</th>
+                    <th>(12und)</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -396,36 +397,7 @@ By Luki
                     <th scope="row">400</th>
                     <td><img src="img/1.png" width="30px" height="30px" class="rounded" alt="..."></td>
                     <td>SOPA WANTAN DE POLLO</td>
-                    <td><span class="badge text-bg-warning">58.00</span></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">400</th>
-                    <td><img src="img/1.png" width="30px" height="30px" class="rounded" alt="..."></td>
-                    <td>SOPA WANTAN DE POLLO</td>
-                    <td><span class="badge text-bg-warning">58.00</span></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">400</th>
-                    <td><img src="img/1.png" width="30px" height="30px" class="rounded" alt="..."></td>
-                    <td>SOPA WANTAN DE POLLO</td>
-                    <td><span class="badge text-bg-warning">58.00</span></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">400</th>
-                    <td><img src="img/1.png" width="30px" height="30px" class="rounded" alt="..."></td>
-                    <td>SOPA WANTAN DE POLLO</td>
-                    <td><span class="badge text-bg-warning">58.00</span></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">400</th>
-                    <td><img src="img/1.png" width="30px" height="30px" class="rounded" alt="..."></td>
-                    <td>SOPA WANTAN DE POLLO</td>
-                    <td><span class="badge text-bg-warning">58.00</span></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">400</th>
-                    <td><img src="img/1.png" width="30px" height="30px" class="rounded" alt="..."></td>
-                    <td>SOPA WANTAN DE POLLO</td>
+                    <td><span class="badge text-bg-warning">20.00</span></td>
                     <td><span class="badge text-bg-warning">58.00</span></td>
                   </tr>
                 </tbody>
@@ -575,7 +547,7 @@ By Luki
           console.error("Error al cargar el JSON: " + err);
         });
       }
-      
+      //PLATOS A LA CARTA
       function SOPADELACASA(){
         $.getJSON("carta.json", function(data) {
           // Accedemos directamente al array que está dentro del primer elemento del array principal
@@ -606,6 +578,39 @@ By Luki
           console.error("Error al cargar el JSON: " + err);
         });
       }
+      
+      //BOCDADITOSCHINOS
+      function BOCADITOS(){
+        $.getJSON("bocaditos.json", function(data) {
+          // Accedemos directamente al array que está dentro del primer elemento del array principal
+          var menuItems = data["BOCADITOS"];
+          var pltFamItems = data["BOCADITOS_DOCENA"];
+          var tablaBody = $("#tbl-BOCADITOS tbody");
+          var i=0;
+          tablaBody.empty();
+          $.each(menuItems, function(index, item) {
+            var fila = $("<tr>");
+            fila.append($("<th class='cll-ncol' scope='row'>").text(item.id));
+            fila.append($("<td class='cll-icol'>").append($("<img>").attr({
+              "src": item.imagenSrc,
+              "width": "40px",
+              "height": "40px",
+              "class": "rounded cllimg",
+              "onerror":"this.src='img/no-photo.png';",
+              "alt": item.descripcion
+            })));
+            fila.append($("<td class='cll-dcol'>").text(item.descripcion));
+            fila.append($("<td class='cll-pcol'>").append($("<span class='badge text-bg-warning'>").text(item.precio.toFixed(2))));
+            fila.append($("<td class='cll-pcol'>").append($("<span class='badge text-bg-warning'>").text(pltFamItems[i].precio.toFixed(2))));
+            tablaBody.append(fila);
+            i++;
+          });
+        }).fail(function(jqxhr, textStatus, error) {
+          var err = textStatus + ", " + error;
+          console.error("Error al cargar el JSON: " + err);
+        });
+      }
+      
       $(document).ready(function() {
         CHAUFA();
         AEROPUERTO();

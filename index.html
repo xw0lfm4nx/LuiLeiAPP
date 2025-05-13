@@ -19,6 +19,7 @@ By Luki
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="css/bootstrap.rtl.min.css?clllukiestuvoaquips">
+	  <link rel="stylesheet" href="LukiLoad/loader.min.css">
     <style>
       .cll-ncol {
         width: 50px;
@@ -48,6 +49,9 @@ By Luki
     <title>LuiLei</title>
   </head>
   <body class="text-bg-light">
+    <div class="loader-body" id="loader">
+        <div class="loader"></div>
+    </div>
     <div class="modal bg-dark fade" id="imagenModal" tabindex="-1" aria-labelledby="imagenModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-lg modal-dialog-centered"> 
         <div class="modal-content text-bg-dark">
@@ -432,6 +436,18 @@ By Luki
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script>
+      document.body.onload = function(){
+        setTimeout(function() {
+          var preloader = document.getElementById('loader');
+          if( !preloader.classList.contains('done') )
+          {
+            preloader.classList.add('done');
+          }
+        }, 1000)
+      }
+    </script>
+    <script>
+
       function luki(){
         $.getJSON("data.json", function(data) {
           var tablaBody = $("#tbl-ARROZCHAUFA tbody");
@@ -652,7 +668,7 @@ By Luki
           console.error("Error al cargar el JSON: " + err);
         });
       }
-
+      
       $(document).ready(function() {
         CHAUFA();
         AEROPUERTO();
@@ -684,6 +700,8 @@ By Luki
           imagenModal.show();
         });
       });
+
+
     </script>
   </body>
 </html>

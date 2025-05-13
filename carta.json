@@ -4,67 +4,67 @@
       "id": 400,
       "imagenSrc": "img/400.png",
       "descripcion": "SOPA WANTAN DE POLLO",
-      "precio": 16.00
+      "precio": 20.00
     },
     {
       "id": 401,
       "imagenSrc": "img/401.png",
       "descripcion": "SOPA WANTAN ESPECIAL",
-      "precio": 16.00
+      "precio": 22.00
     },
     {
       "id": 402,
       "imagenSrc": "img/402.png",
       "descripcion": "SOPA LUILEI DE POLLO",
-      "precio": 19.00
+      "precio": 22.00
     },
     {
       "id": 403,
       "imagenSrc": "img/403.png",
       "descripcion": "SOPA LUI LEI ESPECIAL",
-      "precio": 19.00
+      "precio": 24.00
     },
     {
       "id": 404,
       "imagenSrc": "img/404.png",
       "descripcion": "SOPA FUCHIFU",
-      "precio": 19.00
+      "precio": 20.00
     },
     {
       "id": 405,
       "imagenSrc": "img/405.png",
       "descripcion": "SOPA PAC PO",
-      "precio": 23.00
+      "precio": 24.00
     },
     {
       "id": 406,
       "imagenSrc": "img/406.png",
       "descripcion": "SOPA SIU KAO",
-      "precio": 23.00
+      "precio": 22.00
     },
     {
       "id": 407,
       "imagenSrc": "img/407.png",
       "descripcion": "SOPA DE POLLO CON KIÓN",
-      "precio": 23.00
+      "precio": 20.00
     },
     {
       "id": 408,
       "imagenSrc": "img/408.png",
       "descripcion": "SOPA DE FIDEO CHINO CON POLLO",
-      "precio": 23.00
+      "precio": 20.00
     },
     {
       "id": 409,
       "imagenSrc": "img/409.png",
       "descripcion": "SOPA DE FIDEO CHINO ESPECIAL",
-      "precio": 23.00
+      "precio": 22.00
     },
     {
       "id": 410,
       "imagenSrc": "img/410.png",
       "descripcion": "SOPA ESPECIAL PICANTE",
-      "precio": 23.00
+      "precio": 27.00
     }
   ],
   "SOPADELACASA_FAMILIAR": [
@@ -78,19 +78,19 @@
       "id": "401F",
       "imagenSrc": "img/401.png",
       "descripcion": "SOPA WANTAN ESPECIAL FAMILIAR",
-      "precio": 58.00
+      "precio": 64.00
     },
     {
       "id": "402F",
       "imagenSrc": "img/402.png",
       "descripcion": "SOPA LUILEI DE POLLO FAMILIAR",
-      "precio": 58.00
+      "precio": 64.00
     },
     {
       "id": "403F",
       "imagenSrc": "img/403.png",
       "descripcion": "SOPA LUI LEI ESPECIAL FAMILIAR",
-      "precio": 58.00
+      "precio": 72.00
     },
     {
       "id": "404F",
@@ -102,13 +102,13 @@
       "id": "405F",
       "imagenSrc": "img/405.png",
       "descripcion": "SOPA PAC PO FAMILIAR",
-      "precio": 58.00
+      "precio": 72.00
     },
     {
       "id": "406F",
       "imagenSrc": "img/406.png",
       "descripcion": "SOPA SIU KAO FAMILIAR",
-      "precio": 58.00
+      "precio": 64.00
     },
     {
       "id": "407F",
@@ -126,163 +126,13 @@
       "id": "409F",
       "imagenSrc": "img/409.png",
       "descripcion": "SOPA DE FIDEO CHINO ESPECIAL FAMILIAR",
-      "precio": 58.00
+      "precio": 64.00
     },
     {
       "id": "410F",
       "imagenSrc": "img/410.png",
       "descripcion": "SOPA ESPECIAL PICANTE FAMILIAR",
-      "precio": 58.00
-    }
-  ],
-  "AEROPUERTO": [
-    {
-      "id": 7,
-      "imagenSrc": "img/7.png",
-      "descripcion": "CHANCHO ASADO + AEROPUERTO",
-      "precio": 21.00
-    },
-    {
-      "id": 8,
-      "imagenSrc": "img/8.png",
-      "descripcion": "POLLO BROASTER + AEROPUERTO",
-      "precio": 21.00
-    },
-    {
-      "id": 9,
-      "imagenSrc": "img/9.png",
-      "descripcion": "AEROPUERTO DE POLLO",
-      "precio": 19.00
-    },
-    {
-      "id": 10,
-      "imagenSrc": "img/10.png",
-      "descripcion": "AEROPUERTO DE CHANCHO",
-      "precio": 20.00
-    },
-    {
-      "id": 11,
-      "imagenSrc": "img/11.png",
-      "descripcion": "AEROPUERTO DE CARNE DE RES",
-      "precio": 20.00
-    },
-    {
-      "id": 12,
-      "imagenSrc": "img/12.png",
-      "descripcion": "AEROPUERTO DE CHAMPIÑON",
-      "precio": 20.00
-    },
-    {
-      "id": 13,
-      "imagenSrc": "img/13.png",
-      "descripcion": "AEROPUERTO MIXTO",
-      "precio": 22.00
-    },
-    {
-      "id": 14,
-      "imagenSrc": "img/14.png",
-      "descripcion": "AEROPUERTO ESPECIAL",
-      "precio": 24.00
-    },
-    {
-      "id": 15,
-      "imagenSrc": "img/15.png",
-      "descripcion": "AEROPUERTO WU",
-      "precio": 24.00
-    }
-  ],
-  "TALLARIN": [
-    {
-      "id": 16,
-      "imagenSrc": "img/16.png",
-      "descripcion": "TALLARIN C/ POLLO SANCOCHADO",
-      "precio": 18.00
-    },
-    {
-      "id": 17,
-      "imagenSrc": "img/17.png",
-      "descripcion": "TALLARIN C/ POLLO EN TROZOS",
-      "precio": 20.00
-    },
-    {
-      "id": 18,
-      "imagenSrc": "img/18.png",
-      "descripcion": "TALLARIN C/ CHANCHO",
-      "precio": 20.00
-    },
-    {
-      "id": 19,
-      "imagenSrc": "img/19.png",
-      "descripcion": "TALLARIN C/ CARNE DE RES",
-      "precio": 21.00
-    },
-    {
-      "id": 20,
-      "imagenSrc": "img/20.png",
-      "descripcion": "TALLARIN C/ CHAMPIÑONES",
-      "precio": 20.00
-    },
-    {
-      "id": 21,
-      "imagenSrc": "img/21.png",
-      "descripcion": "TALLARIN WU",
-      "precio": 22.00
-    },
-    {
-      "id": 22,
-      "imagenSrc": "img/22.png",
-      "descripcion": "TALLARIN SAM SEN",
-      "precio": 22.00
-    },
-    {
-      "id": 23,
-      "imagenSrc": "img/23.png",
-      "descripcion": "TALLARIN TAYPA",
-      "precio": 22.00
-    }
-  ],
-  "COMBINADO": [
-    {
-      "id": 24,
-      "imagenSrc": "img/24.png",
-      "descripcion": "CHAUFA + TALLARIN C/ POLLO SANCOCHADO",
-      "precio": 19.00
-    },
-    {
-      "id": 25,
-      "imagenSrc": "img/25.png",
-      "descripcion": "CHAUFA + TALLARIN C/ POLLO EN TROZOS",
-      "precio": 21.00
-    },
-    {
-      "id": 26,
-      "imagenSrc": "img/26.png",
-      "descripcion": "CHAUFA + TALLARIN C/ CHANCHO",
-      "precio": 21.00
-    },
-    {
-      "id": 27,
-      "imagenSrc": "img/27.png",
-      "descripcion": "CHAUFA + TALLARIN C/ CARNE DE RES",
-      "precio": 21.00
-    },
-    {
-      "id": 28,
-      "imagenSrc": "img/28.png",
-      "descripcion": "CHAUFA DE POLLO + TALLARIN C/ ENRROLLADO",
-      "precio": 26.00
-    },
-    {
-      "id": 29,
-      "imagenSrc": "img/29.png",
-      "descripcion": "CHAUFA ESPECIAL + TALLARIN C/ POLLO EN TROZOS",
-      "precio": 26.00
-    },
-    {
-      "id": 30,
-      "imagenSrc": "img/30.png",
-      "descripcion": "CHAUFA ESPECIAL + TALLARIN TAYPA",
-      "precio": 28.00
+      "precio": 79.00
     }
   ]
 }

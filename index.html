@@ -610,7 +610,34 @@ By Luki
           console.error("Error al cargar el JSON: " + err);
         });
       }
-      
+
+      function COMBOBOCADITOS(){
+        $.getJSON("menu.json", function(data) {
+          // Accedemos directamente al array que está dentro del primer elemento del array principal
+          var menuItems = data["COMBOBOCADITOS"];
+          var tablaBody = $("#tbl-COMBOBOCADITOS tbody");
+          tablaBody.empty();
+          $.each(menuItems, function(index, item) {
+            var fila = $("<tr>");
+            fila.append($("<th class='cll-ncol' scope='row'>").text(item.id));
+            fila.append($("<td class='cll-icol'>").append($("<img>").attr({
+              "src": item.imagenSrc,
+              "width": "40px",
+              "height": "40px",
+              "class": "rounded cllimg",
+              "onerror":"this.src='img/no-photo.png';",
+              "alt": item.descripcion
+            })));
+            fila.append($("<td class='cll-dcol'>").text(item.descripcion));
+            fila.append($("<td class='cll-pcol'>").append($("<span class='badge text-bg-danger'>").text(item.precio.toFixed(2))));
+            tablaBody.append(fila);
+          });
+        }).fail(function(jqxhr, textStatus, error) {
+          var err = textStatus + ", " + error;
+          console.error("Error al cargar el JSON: " + err);
+        });
+      }
+
       $(document).ready(function() {
         CHAUFA();
         AEROPUERTO();

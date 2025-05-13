@@ -86,5 +86,25 @@
       "descripcion": "WANTANES ESPECIALES (12UND)",
       "precio": 24.00
     }
+  ],
+  "COMBOBOCADITOS": [
+    {
+      "id": "214",
+      "imagenSrc": "img/214.png",
+      "descripcion": "COMBO LUI LEI",
+      "precio": 25.00
+    },
+    {
+      "id": "215",
+      "imagenSrc": "img/215.png",
+      "descripcion": "COMBO DONG FUN",
+      "precio": 35.00
+    },
+    {
+      "id": "216",
+      "imagenSrc": "img/216.png",
+      "descripcion": "COMBO SUI ZHU",
+      "precio": 38.00
+    }
   ]
 }

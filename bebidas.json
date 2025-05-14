@@ -1,0 +1,22 @@
+{
+  "BEBIDAS": [
+    {
+      "id": 101,
+      "imagenSrc": "img/101.png",
+      "descripcion": "GASEOSA PERSONAL DESCARTABLE",
+      "precio": 6.00
+    },
+    {
+      "id": 105,
+      "imagenSrc": "img/105.png",
+      "descripcion": "GESOSA 1.5LT DESCARTABLE",
+      "precio": 14.00
+    },
+    {
+      "id": 110,
+      "imagenSrc": "img/110.png",
+      "descripcion": "BOTELLA DE CHICHA",
+      "precio": 15.00
+    }
+  ]
+}

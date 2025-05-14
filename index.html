@@ -810,7 +810,7 @@ By Luki
               "height": "40px",
               "class": "rounded cllimg",
               "onerror":"this.src='img/no-photo.png';",
-              "alt": item.descripcion
+              "alt": item.descripcion.replace(/\n/g, '<br>'),
             })));
             fila.append($("<td class='cll-dcol'>").text(item.descripcion));
             fila.append($("<td class='cll-pcol'>").append($("<span class='badge text-bg-danger'>").text(item.precio.toFixed(2))));

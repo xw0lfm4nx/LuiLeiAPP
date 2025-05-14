@@ -1,0 +1,88 @@
+{
+  "PROMOCIONES": [
+    {
+      "id": 701,
+      "imagenSrc": "img/701.png",
+      "descripcion": "PROMOCIÓN N° 01",
+      "precio": 45.00
+    },
+    {
+      "id": 702,
+      "imagenSrc": "img/702.png",
+      "descripcion": "PROMOCIÓN N° 02",
+      "precio": 50.00
+    },
+    {
+      "id": 703,
+      "imagenSrc": "img/703.png",
+      "descripcion": "PROMOCIÓN N° 03",
+      "precio": 42.00
+    },
+    {
+      "id": 704,
+      "imagenSrc": "img/704.png",
+      "descripcion": "PROMOCIÓN N° 04",
+      "precio": 51.00
+    },
+    {
+      "id": 705,
+      "imagenSrc": "img/705.png",
+      "descripcion": "PROMOCIÓN N° 05",
+      "precio": 63.00
+    },
+    {
+      "id": 706,
+      "imagenSrc": "img/706.png",
+      "descripcion": "PROMOCIÓN N° 06",
+      "precio": 68.00
+    },
+    {
+      "id": 707,
+      "imagenSrc": "img/707.png",
+      "descripcion": "PROMOCIÓN N° 07",
+      "precio": 63.00
+    },
+    {
+      "id": 708,
+      "imagenSrc": "img/708.png",
+      "descripcion": "PROMOCIÓN N° 08",
+      "precio": 62.00
+    },
+    {
+      "id": 709,
+      "imagenSrc": "img/709.png",
+      "descripcion": "PROMOCIÓN N° 09",
+      "precio": 67.00
+    },
+    {
+      "id": 710,
+      "imagenSrc": "img/710.png",
+      "descripcion": "PROMOCIÓN N° 10",
+      "precio": 69.00
+    },
+    {
+      "id": 711,
+      "imagenSrc": "img/711.png",
+      "descripcion": "PROMOCIÓN N° 11",
+      "precio": 69.00
+    },
+    {
+      "id": 712,
+      "imagenSrc": "img/712.png",
+      "descripcion": "PROMOCIÓN N° 12",
+      "precio": 72.00
+    },
+    {
+      "id": 713,
+      "imagenSrc": "img/713.png",
+      "descripcion": "PROMOCIÓN N° 13",
+      "precio": 83.00
+    },
+    {
+      "id": 714,
+      "imagenSrc": "img/714.png",
+      "descripcion": "PROMOCIÓN N° 14",
+      "precio": 51.00
+    }
+  ]
+}

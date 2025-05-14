@@ -95,7 +95,7 @@ By Luki
         </div>
       </div>
     </div>
-
+    <!-- HEADER -->
     <nav class="navbar bg-body-tertiary fixed-top mb-5">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
@@ -107,6 +107,7 @@ By Luki
           </div>
         </div>
     </nav>
+    <!-- MENU -->
     <div style="overflow-x: scroll;" class="text-center" width="100%">
       <ul class="nav nav-tabs text-center pt-10" style="min-width: 800px;">
           <li class="nav-item dt">
@@ -147,6 +148,7 @@ By Luki
           </li>
       </ul>
     </div>
+    <!-- CONTENT -->
     <div class="container text-center">
         <div class="tab-content pt-5">
             <div class="tab-pane fade show active" id="MENU">
@@ -430,7 +432,51 @@ By Luki
               </table>
             </div>
             <div class="tab-pane fade" id="PROMOCIONES">
-              Contenido de la pestaña Mensajes.
+                <table class="table table-hover" id="tbl-PROMOCIONES">
+                  <thead>
+                    <tr>
+                      <th scope="col" colspan="4"><h2 class="text-end">PROMOCIONES</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th class="cll-ncol" scope="row">1</th>
+                      <td class="cll-icol"><img src="img/1.png" width="30px" height="30px" class="rounded" alt="..."></td>
+                      <td class="cll-dcol">COMBINADO DE</td>
+                      <td class="cll-pcol"><span class="badge text-bg-danger">58.00</span></td>
+                    </tr>
+                    <tr>
+                      <th class="cll-ncol" scope="row">2</th>
+                      <td class="cll-icol"><img src="img/1.png" width="30px" height="30px" class="rounded" alt="..."></td>
+                      <td class="cll-dcol">COMBINADO DE</td>
+                      <td class="cll-pcol"><span class="badge text-bg-danger">58.00</span></td>
+                    </tr>
+                    <tr>
+                      <th class="cll-ncol" scope="row">3</th>
+                      <td class="cll-icol"><img src="img/1.png" width="30px" height="30px" class="rounded" alt="..."></td>
+                      <td class="cll-dcol">COMBINADO DE</td>
+                      <td class="cll-pcol"><span class="badge text-bg-danger">58.00</span></td>
+                    </tr>
+                    <tr>
+                      <th class="cll-ncol" scope="row">4</th>
+                      <td class="cll-icol"><img src="img/1.png" width="30px" height="30px" class="rounded" alt="..."></td>
+                      <td class="cll-dcol">COMBINADO DE</td>
+                      <td class="cll-pcol"><span class="badge text-bg-danger">58.00</span></td>
+                    </tr>
+                    <tr>
+                      <th class="cll-ncol" scope="row">5</th>
+                      <td class="cll-icol"><img src="img/1.png" width="30px" height="30px" class="rounded" alt="..."></td>
+                      <td class="cll-dcol">COMBINADO DE</td>
+                      <td class="cll-pcol"><span class="badge text-bg-danger">58.00</span></td>
+                    </tr>
+                    <tr>
+                      <th class="cll-ncol" scope="row">6</th>
+                      <td class="cll-icol"><img src="img/1.png" width="30px" height="30px" class="rounded" alt="..."></td>
+                      <td class="cll-dcol">COMBINADO DE</td>
+                      <td class="cll-pcol"><span class="badge text-bg-danger">58.00</span></td>
+                    </tr>
+                  </tbody>
+                </table>
             </div>
             <div class="tab-pane fade" id="COMBOSFAMILIARES">
               Contenido de la pestaña COMBOSFAMILIARES.
@@ -675,6 +721,35 @@ By Luki
           console.error("Error al cargar el JSON: " + err);
         });
       }
+
+      //PROMOCIONES
+      
+      function PROMOCIONES(){
+        $.getJSON("promociones.json", function(data) {
+          // Accedemos directamente al array que está dentro del primer elemento del array principal
+          var menuItems = data["PROMOCIONES"];
+          var tablaBody = $("#tbl-PROMOCIONES tbody");
+          tablaBody.empty();
+          $.each(menuItems, function(index, item) {
+            var fila = $("<tr>");
+            fila.append($("<th class='cll-ncol' scope='row'>").text(item.id));
+            fila.append($("<td class='cll-icol'>").append($("<img>").attr({
+              "src": item.imagenSrc,
+              "width": "40px",
+              "height": "40px",
+              "class": "rounded cllimg",
+              "onerror":"this.src='img/no-photo.png';",
+              "alt": item.descripcion
+            })));
+            fila.append($("<td class='cll-dcol'>").text(item.descripcion));
+            fila.append($("<td class='cll-pcol'>").append($("<span class='badge text-bg-danger'>").text(item.precio.toFixed(2))));
+            tablaBody.append(fila);
+          });
+        }).fail(function(jqxhr, textStatus, error) {
+          var err = textStatus + ", " + error;
+          console.error("Error al cargar el JSON: " + err);
+        });
+      }
       
       $(document).ready(function() {
         CHAUFA();
@@ -684,6 +759,7 @@ By Luki
         SOPADELACASA();
         BOCADITOS();
         COMBOBOCADITOS();
+        PROMOCIONES();
         // Escucha el evento click en cualquier elemento con la clase 'cllimg'
         $(document).on('click', '.cllimg', function() {
           // Obtiene el 'src' del elemento clickeado

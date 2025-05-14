@@ -1,0 +1,52 @@
+{
+  "COMBOSFAMILIARES": [
+    {
+      "id": 301,
+      "imagenSrc": "img/301.png",
+      "descripcion": "COMBO FAMILIAR N° 01 (4 PERSONAS)",
+      "precio": 145.00
+    },
+    {
+      "id": 302,
+      "imagenSrc": "img/302.png",
+      "descripcion": "COMBO FAMILIAR N° 02 (4 PERSONAS)",
+      "precio": 145.00
+    },
+    {
+      "id": 303,
+      "imagenSrc": "img/303.png",
+      "descripcion": "COMBO FAMILIAR N° 03 (4 PERSONAS)",
+      "precio": 175.00
+    },
+    {
+      "id": 304,
+      "imagenSrc": "img/304.png",
+      "descripcion": "COMBO FAMILIAR N° 04 (4 PERSONAS)",
+      "precio": 225.00
+    },
+    {
+      "id": 305,
+      "imagenSrc": "img/305.png",
+      "descripcion": "COMBO FAMILIAR N° 05 (6 PERSONAS)",
+      "precio": 230.00
+    },
+    {
+      "id": 306,
+      "imagenSrc": "img/306.png",
+      "descripcion": "COMBO FAMILIAR N° 06 (8 PERSONAS)",
+      "precio": 265.00
+    },
+    {
+      "id": 307,
+      "imagenSrc": "img/307.png",
+      "descripcion": "COMBO FAMILIAR N° 07 (10 PERSONAS)",
+      "precio": 280.00
+    },
+    {
+      "id": 308,
+      "imagenSrc": "img/308.png",
+      "descripcion": "COMBO FAMILIAR N° 08 (12 PERSONAS)",
+      "precio": 325.00
+    }
+  ]
+}
